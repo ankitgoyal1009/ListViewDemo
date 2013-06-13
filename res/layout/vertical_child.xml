@@ -9,7 +9,7 @@
         android:background="@android:color/holo_blue_dark"
         android:id="@+id/horizontal_list"
         android:layout_width="fill_parent"
-        android:layout_height="500dp" >
+        android:layout_height="50dp" >
     </com.example.listviewdemo.HorizontalListView>
 <!-- 
 </LinearLayout> -->

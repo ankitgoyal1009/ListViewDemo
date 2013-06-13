@@ -51,7 +51,7 @@ public class VerticalAdapter extends BaseAdapter {
 
 	@Override
 	public int getCount() {
-		return 3;
+		return 30;
 	}
 
 	@Override
@@ -72,10 +72,11 @@ public class VerticalAdapter extends BaseAdapter {
 		HorizontalAdapter horizontalAdapter = new HorizontalAdapter(mContext);
 		verticalChild.setAdapter(horizontalAdapter);
 		convertView = verticalChild;*/
-		HorizontalListView hList = (HorizontalListView) mHorizontalListSet[position];
-		hList.setAdapter(mAdapterSet[position]);
+		/*HorizontalListView hList = (HorizontalListView) mHorizontalListSet[position];
+		hList.setAdapter(mAdapterSet[position]);*/
 		Log.d("List","MainList getView:"+position);
-		return hList;
+		
+		return mHorizontalList;
 	}
 
 }

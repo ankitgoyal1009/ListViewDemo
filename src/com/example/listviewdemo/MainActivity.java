@@ -55,10 +55,11 @@ public class MainActivity extends Activity {
 		};
 		//ListView list = (ListView) findViewById(R.id.vertical_list);
 		//VerticalAdapter mAdapter = new VerticalAdapter(this);
-		//list.setAdapter(mAdapter);
-		HorizontalListView listSet[] = {new HorizontalListView(this),new HorizontalListView(this),new HorizontalListView(this),new HorizontalListView(this)};
-		BaseAdapter mAdapterSet[] = {mAdapter,mAdapter,mAdapter,mAdapter};
-		verticalList.setAdapter(new VerticalAdapter(this,listSet,mAdapterSet ));
+		list.setAdapter(mAdapter);
+		//HorizontalListView listSet[] = {new HorizontalListView(this),new HorizontalListView(this),new HorizontalListView(this),new HorizontalListView(this)};
+		//BaseAdapter mAdapterSet[] = {mAdapter,mAdapter,mAdapter,mAdapter};
+		//verticalList.setAdapter(new VerticalAdapter(this,listSet,mAdapterSet ));
+		verticalList.setAdapter(new VerticalAdapter(this,list));
 	}
 
 }
